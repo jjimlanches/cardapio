@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Cardápio J.JIM Lanches</title>
+</head>
+<body>
+    <header>
+        <h1>J. JIM LANCHES</h1>
+        <div class="telefone">
+           <img src="imagens/logo-what.png" alt="logo whattsapp" style="width: 30px; height: 30px;">
+            <a href="tel:(19)983138244">(19)983138244</a> 
+        </div>
+    </header>
+    <nav>
+        <a href="#lanches" onclick="mostrarLanche()" id="linkLanche" style="color: #ED3437;" ><h2>Lanches</h2></a>
+        <a href="#hot-dogs" onclick="mostrarHotDog()" id="linkHotDog"><h2>Hot Dogs</h2></a>
+        <a href="#bebidas" onclick="mostrarBebida()" id="linkBebida"><h2>Bebidas</h2></a>
+        <a href="#opcionais" onclick="mostrarOpcional()" id="linkOpicional"><h2>Opcionais</h2></a>
+    </nav>
+    
+    <main>
+        <section class="lanche" style="display: block;" id="lanche">
+            <details>
+                <summary>Linguiça no pão francês<br><span>R$ </span><span class="preco">33,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>Linguiça</li>
+                    <li>Queijo prato</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Churrasquinho de coxão mole<br><span>R$ </span><span class="preco">35,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>Carne</li>
+                    <li>Queijo prato</li>
+                    <li>Ovo</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+            <details>
+                <summary>X-Frango<br><span>R$ </span><span class="preco">23,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>Frango Desfiado</li>
+                    <li>Catupiry</li>
+                    <li>Queijo prato</li>
+                    <li>Batata-Palha</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+            <details>
+                <summary>X-Frango Bacon<br><span>R$ </span><span class="preco">25,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>Frango Desfiado</li>
+                    <li>Bacon</li>
+                    <li>Catupiry</li>
+                    <li>Queijo prato</li>
+                    <li>Batata-Palha</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+            <details>
+                <summary>X-Egg<br><span>R$ </span><span class="preco">22,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>Hamburguer</li>
+                    <li>Catupiry</li>
+                    <li>Queijo prato</li>
+                    <li>Ovo</li>
+                    <li>Batata-Palha</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+            <details>
+                <summary>X-Egg Bacon<br><span>R$ </span><span class="preco">25,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>Hamburguer</li>
+                    <li>Bacon</li>
+                    <li>Catupiry</li>
+                    <li>Queijo prato</li>
+                    <li>Ovo</li>
+                    <li>Batata-Palha</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+            <details>
+                <summary>X-Calabresa<br><span>R$ </span><span class="preco">22,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>Hamburguer</li>
+                    <li>Calabresa</li>
+                    <li>Catupiry</li>
+                    <li>Queijo prato</li>
+                    <li>Ovo</li>
+                    <li>Batata-Palha</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+            <details>
+                <summary>X-Salada 1<br><span>R$ </span><span class="preco">21,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>Hamburguer</li>
+                    <li>Catupiry</li>
+                    <li>Queijo prato</li>
+                    <li>Batata-Palha</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+            <details>
+                <summary>X-Salada 2<br><span>R$ </span><span class="preco">25,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>Hamburguer</li>
+                    <li>Catupiry</li>
+                    <li>Presunto</li>
+                    <li>Queijo prato</li>
+                    <li>Milho</li>
+                    <li>Ervilha</li>
+                    <li>Batata-Palha</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+            <details>
+                <summary>X-Burguer<br><span>R$ </span><span class="preco">20,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>Hamburguer</li>
+                    <li>Queijo prato</li>
+                    <li>Ovo</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+            <details>
+                <summary>X-Tudo<br><span>R$ </span><span class="preco">32,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>Hamburguer</li>
+                    <li>Frango</li>
+                    <li>Salsicha</li>
+                    <li>Bacon</li>
+                    <li>Calabresa</li>
+                    <li>Ovo</li>
+                    <li>Queijo prato</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+            <details>
+                <summary>X-Tudo c/ Catupiry<br><span>R$ </span><span class="preco">35,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>Hamburguer</li>
+                    <li>Frango</li>
+                    <li>Salsicha</li>
+                    <li>Bacon</li>
+                    <li>Calabresa</li>
+                    <li>Ovo</li>
+                    <li>Catupiry</li>
+                    <li>Queijo prato</li>
+                    <li>Tomate</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Misto quente<br><span>R$ </span><span class="preco">18,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>Presunto</li>
+                    <li>Queijo prato</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+        </section>
+
+        <section class="hotDog" style="display: none;" id="hotDog">
+            <details>
+                <summary>Especial<br><span>R$ </span><span class="preco">32,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>2 salsichas</li>
+                    <li>Frango Desfiado</li>
+                    <li>Bacon</li>
+                    <li>Catupiry</li>
+                    <li>Milho</li>
+                    <li>Batata-Palha</li>
+                    <li>Tomate</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Simples Bacon e Catupiry<br><span>R$ </span><span class="preco">25,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>2 salsichas</li>
+                    <li>Bacon</li>
+                    <li>Catupiry</li>
+                    <li>Milho</li>
+                    <li>Batata-Palha</li>
+                    <li>Tomate</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Simples Frango e Catupiry<br><span>R$ </span><span class="preco">25,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>2 salsichas</li>
+                    <li>Frango Desfiado</li>
+                    <li>Catupiry</li>
+                    <li>Milho</li>
+                    <li>Batata-Palha</li>
+                    <li>Tomate</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Simples c/ Frango<br><span>R$ </span><span class="preco">23,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>2 salsichas</li>
+                    <li>Frango Desfiado</li>
+                    <li>Milho</li>
+                    <li>Batata-Palha</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Simples c/ Bacon<br><span>R$ </span><span class="preco">23,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>2 salsichas</li>
+                    <li>Bacon</li>
+                    <li>Milho</li>
+                    <li>Batata-Palha</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Simples<br><span>R$ </span><span class="preco">18,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>2 salsichas</li>
+                    <li>Milho</li>
+                    <li>Batata-Palha</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Tradicional<br><span>R$ </span><span class="preco">17,00</span> </summary>
+                <ul class="ingredientes" >
+                    <li>2 salsichas</li>
+                    <li>Batata-Palha</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                </ul>
+            </details>
+        </section>
+            
+        <section class="bebida" style="display: none;" id="bebida">
+            <ul>
+                <li>Coca-Cola (lata)____________<span class="cifrao">R$</span><span class="precoOpcao">6,00</span> </li>
+                <li>Coca-Cola Zero (lata)________<span class="cifrao">R$</span><span class="precoOpcao">5,00</span> </li>
+                <li>Coca-Cola 600ml____________<span class="cifrao">R$</span><span class="precoOpcao">7,00</span> </li>
+                <li>Fanta Laranja______________<span class="cifrao">R$</span><span class="precoOpcao">5,00</span> </li>
+                <li>Fanta Uva_________________<span class="cifrao">R$</span><span class="precoOpcao">5,00</span> </li>
+                <li>Guaraná Antartica___________<span class="cifrao">R$</span><span class="precoOpcao">5,00</span> </li>
+                <li>Soda Antartica______________<span class="cifrao">R$</span><span class="precoOpcao">5,00</span> </li>
+                <li>Água 500ml________________<span class="cifrao">R$</span><span class="precoOpcao">3,00</span> </li>
+                <li>Cerveja (lata)______________<span class="cifrao">R$</span><span class="precoOpcao">5,00</span> </li>
+                <li>Suco Prat's 330ml___________<span class="cifrao">R$</span><span class="precoOpcao">5,00</span> </li>
+            </ul>
+
+        </section>
+
+        <section class="opcional" style="display: none;" id="opcional">
+            <ul>
+                <li>Salsicha___________________<span class="cifrao">R$</span><span class="precoOpcao">2,00</span></li>
+                <li>Milho_____________________<span class="cifrao">R$</span><span class="precoOpcao">2,00</span></li>
+                <li>Batata Palha________________<span class="cifrao">R$</span><span class="precoOpcao">2,00</span></li>
+                <li>Queijo prato_________________<span class="cifrao">R$</span><span class="precoOpcao">6,00</span></li>
+                <li>Frango desfiado______________<span class="cifrao">R$</span><span class="precoOpcao">10,00</span></li>
+                <li>Calabresa__________________<span class="cifrao">R$</span><span class="precoOpcao">10,00</span></li>
+                <li>Presunto___________________<span class="cifrao">R$</span><span class="precoOpcao">6,00</span></li>
+                <li>Hambúrguer_________________<span class="cifrao">R$</span><span class="precoOpcao">8,00</span></li>
+                <li>Catupiry___________________<span class="cifrao">R$</span><span class="precoOpcao">8,00</span></li>
+                <li>Bacon____________________<span class="cifrao">R$</span><span class="precoOpcao">10,00</span></li>
+                <li>Ovo______________________<span class="cifrao">R$</span><span class="precoOpcao">2,00</span></li>
+                <li>Pão______________________<span class="cifrao">R$</span><span class="precoOpcao">8,00</span></li>
+            </ul>
+        </section>
+    </main>
+    
+
+
+
+    <footer>
+        <p>Não Aceitamos cheque.</p>
+        <p>Agradecemos a preferência.</p>
+        <Div>
+            <img src="imagens/logo-mastercard-256.png" alt="logo mastercard" style="width: 50px;height: 50px;">
+            <img src="imagens/logo-visa.png" alt="logo visa" style="width: 50px;height: 50px;">
+            <img src="imagens/logo-elo.png" alt="logo elo" style="width: 50px;height: 50px;">
+        </Div>
+        
+
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

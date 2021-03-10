@@ -28,7 +28,7 @@ details {
     content: '';
     border-width: .4rem;
     border-style: solid;
-    border-color: transparent transparent transparent #fff;
+    border-color: transparent transparent transparent #000;
     position: absolute;
     top: 1.3rem;
     left: 1rem;
@@ -50,7 +50,7 @@ details {
   details ul {
     padding-bottom: 1rem;
     margin-bottom: 0;
-    color: #774538;
+    color: #000;
   }
   
    

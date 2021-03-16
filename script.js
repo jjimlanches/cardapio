@@ -3,10 +3,6 @@ function mostrarLanche(){
     let hotDog = document.getElementById('hotDog')
     let bebida = document.getElementById('bebida')
     let opcional = document.getElementById('opcional')
-    let linkLanche = document.getElementById('linkLanche')
-    let linkHotDog = document.getElementById('linkHotDog')
-    let linkBebida = document.getElementById('linkBebida')
-    let linkOpicional = document.getElementById('linkOpicional')
     
     if(lanche.style.display === 'none'){
         lanche.style.display = 'block'
@@ -14,14 +10,6 @@ function mostrarLanche(){
         bebida.style.display = 'none'
         opcional.style.display = 'none'
     }
-
-    if(lanche.style.display === 'block'){
-        linkLanche.style.color = '#ED3437'
-        linkHotDog.style.color = 'black'
-        linkBebida.style.color = 'black'
-        linkOpicional.style.color = 'black'
-    }
-        
 }
 
 function mostrarHotDog(){
@@ -36,13 +24,6 @@ function mostrarHotDog(){
         bebida.style.display = 'none'
         opcional.style.display = 'none'
     }
-
-    if(hotDog.style.display === 'block'){
-        linkLanche.style.color = 'black'
-        linkHotDog.style.color = '#ED3437'
-        linkBebida.style.color = 'black'
-        linkOpicional.style.color = 'black'
-    }
 }
 
 function mostrarBebida(){
@@ -56,14 +37,7 @@ function mostrarBebida(){
         lanche.style.display = 'none'
         bebida.style.display = 'block'
         opcional.style.display = 'none'
-    }
-
-    if(bebida.style.display === 'block'){
-        linkLanche.style.color = 'black'
-        linkHotDog.style.color = 'black'
-        linkBebida.style.color = '#ED3437'
-        linkOpicional.style.color = 'black'
-    }
+    } 
 }
 
 function mostrarOpcional(){
@@ -77,13 +51,6 @@ function mostrarOpcional(){
         lanche.style.display = 'none'
         bebida.style.display = 'none'
         opcional.style.display = 'block'
-    }
-
-    if(opcional.style.display === 'block'){
-        linkLanche.style.color = 'black'
-        linkHotDog.style.color = 'black'
-        linkBebida.style.color = 'black'
-        linkOpicional.style.color = '#ED3437'
     }
 }
 

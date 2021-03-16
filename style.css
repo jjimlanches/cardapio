@@ -1,4 +1,4 @@
-html, body,header{
+html, body,header,h2{
   margin: 0;
   padding: 0;
 }
@@ -67,7 +67,7 @@ details {
 
   header{
       height: 120px;
-      font-family: 'Luckiest Guy', cursive;
+      font-family: 'Bangers', cursive;
       text-align: center;
       color: red;
       background-color: #fff;
@@ -91,7 +91,7 @@ details {
     align-items: center;
     font-family: 'Kalam', cursive;
     letter-spacing: 0;
-    font-weight: 600;
+    font-family: 'Bangers', cursive;
   }
   .telefone a{
     text-decoration: none;
@@ -110,9 +110,22 @@ details {
   }
 
   nav a{
+      display: flex;
+      flex-direction: column;
       text-decoration: none;
       color: black;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px 20px 0 0;
+      width: 80px;;
+      padding-top: 5px;
   }
+
+  nav a:hover{
+    color: white;
+    background-color: #ec6e00c7;
+  }
+
 
   span{
       font-weight: 600;
@@ -128,7 +141,7 @@ details {
   }
 
   footer{
-    background-color: #000;
+    background-color: #212121;
     color: #fff;
     bottom: 0;
     left: 0;

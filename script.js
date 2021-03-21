@@ -53,5 +53,3 @@ function mostrarOpcional(){
         opcional.style.display = 'block'
     }
 }
-
-

@@ -3,6 +3,10 @@ html, body,header,h2{
   padding: 0;
 }
 
+html{
+  background-color: white;
+}
+
 details {
     width: 75%;
     margin: 0 auto ;
@@ -63,7 +67,6 @@ details {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    
   }
 
   header{
@@ -79,12 +82,14 @@ details {
       align-items: center;
       justify-content: center;
       letter-spacing: 3px;
+      
   }
-
+  
   header h1{
     margin: 0;
     line-height: 1;
   }
+  
 
   .telefone{
     display: flex;
@@ -102,8 +107,8 @@ details {
   }
   
   nav { 
-      display: inline-flex;
-      justify-content: space-around;
+      display: flex;
+      justify-content: space-between;
       flex-direction: row;
       background-color: #fff;
       width: 100%;
@@ -126,25 +131,23 @@ details {
   nav a:hover{
     color: white;
     background-color: darkorange;
-  }
 
+  }
 
   span{
       font-weight: 600;
       color: red;
   }
 
-  .precoOpcao{
-      color: #fff;
+  .cifrao, .precoOpcao{
+      color: red;
   }
 
-  .cifrao{
-    color: #fff;
-  }
 
   footer{
     background-color: #252525;
     color: #fff;
+    position: relative;
     bottom: 0;
     left: 0;
     font-family: Verdana, sans-serif;
@@ -168,7 +171,15 @@ details {
     height: 100%;
   }
 
-  .bebida, .opcional{
-    color: #fff;
+  table {
+    background-color: white;
+    color: black;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 5px;
   }
+  tr:nth-child(even){
+    background-color: #eeeded;
+  }
+
   

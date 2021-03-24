@@ -1,13 +1,13 @@
 
     let linkLanche = document.getElementById('linkLanche')
+    let linkHotDog = document.getElementById('linkHotDog')
+    let linkOpcional = document.getElementById('linkOpcional')
+    let linkBebida = document.getElementById('linkBebida')
+
     if (lanche.style.display === 'block'){
         linkLanche.style.backgroundColor = 'darkorange', 
         linkLanche.style.color = 'white'
-    }else {
-        linkLanche.style.backgroundColor = 'whitesmoke', 
-        linkLanche.style.color = 'black'
     }
-    
 
 function mostrarLanche(){
     let lanche = document.getElementById('lanche')
@@ -22,12 +22,16 @@ function mostrarLanche(){
         opcional.style.display = 'none'
     }
 
+
     if (lanche.style.display === 'block'){
         linkLanche.style.backgroundColor = 'darkorange', 
         linkLanche.style.color = 'white'
-    }else {
-        linkLanche.style.backgroundColor = 'whitesmoke', 
-        linkLanche.style.color = 'black'
+        linkHotDog.style.backgroundColor = 'whitesmoke'
+        linkHotDog.style.color = 'black'
+        linkOpcional.style.backgroundColor = 'whitesmoke'
+        linkOpcional.style.color = 'black'
+        linkBebida.style.backgroundColor = 'whitesmoke'
+        linkBebida.style.color = 'black'
     }
 
 }
@@ -46,13 +50,16 @@ function mostrarHotDog(){
         opcional.style.display = 'none'
     }
 
-    let linkLanche = document.getElementById('linkLanche')
-    if (lanche.style.display === 'block'){
-        linkLanche.style.backgroundColor = 'darkorange', 
-        linkLanche.style.color = 'white'
-    }else {
-        linkLanche.style.backgroundColor = 'whitesmoke', 
+    
+    if (hotDog.style.display === 'block'){
+        linkHotDog.style.backgroundColor = 'darkorange', 
+        linkHotDog.style.color = 'white'
+        linkLanche.style.backgroundColor = 'whitesmoke'
         linkLanche.style.color = 'black'
+        linkOpcional.style.backgroundColor = 'whitesmoke'
+        linkOpcional.style.color = 'black'
+        linkBebida.style.backgroundColor = 'whitesmoke'
+        linkBebida.style.color = 'black'
     }
 }
 
@@ -68,6 +75,17 @@ function mostrarBebida(){
         bebida.style.display = 'block'
         opcional.style.display = 'none'
     } 
+
+    if (bebida.style.display === 'block'){
+        linkBebida.style.backgroundColor = 'darkorange', 
+        linkBebida.style.color = 'white'
+        linkLanche.style.backgroundColor = 'whitesmoke'
+        linkLanche.style.color = 'black'
+        linkOpcional.style.backgroundColor = 'whitesmoke'
+        linkOpcional.style.color = 'black'
+        linkHotDog.style.backgroundColor = 'whitesmoke'
+        linkHotDog.style.color = 'black'
+    }
 }
 
 function mostrarOpcional(){
@@ -81,5 +99,16 @@ function mostrarOpcional(){
         lanche.style.display = 'none'
         bebida.style.display = 'none'
         opcional.style.display = 'block'
+    }
+
+    if (opcional.style.display === 'block'){
+        linkOpcional.style.backgroundColor = 'darkorange', 
+        linkOpcional.style.color = 'white'
+        linkLanche.style.backgroundColor = 'whitesmoke'
+        linkLanche.style.color = 'black'
+        linkBebida.style.backgroundColor = 'whitesmoke'
+        linkBebida.style.color = 'black'
+        linkHotDog.style.backgroundColor = 'whitesmoke'
+        linkHotDog.style.color = 'black'
     }
 }

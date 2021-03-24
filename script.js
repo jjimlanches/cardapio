@@ -1,9 +1,10 @@
+
 function mostrarLanche(){
     let lanche = document.getElementById('lanche')
     let hotDog = document.getElementById('hotDog')
     let bebida = document.getElementById('bebida')
     let opcional = document.getElementById('opcional')
-    
+
     if(lanche.style.display === 'none'){
         lanche.style.display = 'block'
         hotDog.style.display = 'none'
@@ -17,6 +18,7 @@ function mostrarHotDog(){
     let hotDog = document.getElementById('hotDog')
     let bebida = document.getElementById('bebida')
     let opcional = document.getElementById('opcional')
+    
     
     if(hotDog.style.display === 'none'){
         hotDog.style.display = 'block'

@@ -161,10 +161,24 @@ details {
     text-align: center;
     margin-top: 20px;
     padding-top: 10px;
+    padding-bottom: 20px;
   }
 
   footer p{
     margin: 0;
+  }
+
+  #nome{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 2px;
   }
   main{
     flex-grow: 1;

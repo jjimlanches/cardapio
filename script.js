@@ -1,4 +1,14 @@
 
+    let linkLanche = document.getElementById('linkLanche')
+    if (lanche.style.display === 'block'){
+        linkLanche.style.backgroundColor = 'darkorange', 
+        linkLanche.style.color = 'white'
+    }else {
+        linkLanche.style.backgroundColor = 'whitesmoke', 
+        linkLanche.style.color = 'black'
+    }
+    
+
 function mostrarLanche(){
     let lanche = document.getElementById('lanche')
     let hotDog = document.getElementById('hotDog')
@@ -11,6 +21,15 @@ function mostrarLanche(){
         bebida.style.display = 'none'
         opcional.style.display = 'none'
     }
+
+    if (lanche.style.display === 'block'){
+        linkLanche.style.backgroundColor = 'darkorange', 
+        linkLanche.style.color = 'white'
+    }else {
+        linkLanche.style.backgroundColor = 'whitesmoke', 
+        linkLanche.style.color = 'black'
+    }
+
 }
 
 function mostrarHotDog(){
@@ -25,6 +44,15 @@ function mostrarHotDog(){
         lanche.style.display = 'none'
         bebida.style.display = 'none'
         opcional.style.display = 'none'
+    }
+
+    let linkLanche = document.getElementById('linkLanche')
+    if (lanche.style.display === 'block'){
+        linkLanche.style.backgroundColor = 'darkorange', 
+        linkLanche.style.color = 'white'
+    }else {
+        linkLanche.style.backgroundColor = 'whitesmoke', 
+        linkLanche.style.color = 'black'
     }
 }
 
